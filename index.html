@@ -743,8 +743,13 @@
 <section class="hero">
   <div class="hero-texture"></div>
   <div class="hero-content">
-    <div class="hero-arabic">كل عائلة لديها قصة</div>
-    <h1>Every Family<br>Has <em>a Story</em></h1>
+    <div style="display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 2.5rem;">
+      <div style="font-family: 'Noto Naskh Arabic', serif; font-size: 1.6rem; color: rgba(245,240,232,0.9); direction: rtl; animation: fadeInUp 1s ease 0s both; letter-spacing: 0.03em;">كل عائلة لديها قصة</div>
+      <div style="font-family: 'Noto Naskh Arabic', serif; font-size: 1.6rem; color: rgba(245,240,232,0.9); direction: rtl; animation: fadeInUp 1s ease 0.12s both;">לכל משפחה יש סיפור</div>
+      <div style="font-family: 'Noto Naskh Arabic', serif; font-size: 1.6rem; color: rgba(245,240,232,0.9); direction: rtl; animation: fadeInUp 1s ease 0.24s both;">هر خانواده‌ای داستانی دارد</div>
+      <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: rgba(245,240,232,0.9); font-style: italic; animation: fadeInUp 1s ease 0.36s both; letter-spacing: 0.02em;">Every family has a story</div>
+    </div>
+    <h1>The Generations<br><em>Project</em></h1>
     <div class="hero-line"></div>
     <p class="hero-sub">
       Capturing multigenerational narratives across the Middle East to reveal our shared humanity and build pathways toward peace.
@@ -858,7 +863,7 @@
       </div>
       <div class="team-card reveal reveal-delay-2">
         <div class="team-initials">S</div>
-        <div class="team-name">Selma Ahmed</div>
+        <div class="team-name">Selma</div>
         <div class="team-role">Co-Founder</div>
         <p class="team-bio">Stanford '29. Expertise in digital humanities and storytelling. Afghan American with a personal connection to multigenerational displacement. Leading the design of the digital archive, media production pipeline, and replicable toolkit.</p>
       </div>
@@ -891,7 +896,7 @@
       We are seeking families, student collaborators, media partners, and supporters who believe that stories can change the world. The pilot launches in 2026.
     </p>
     <div class="cta-buttons reveal reveal-delay-2">
-      <a href="mailto:lschiffer@stanford.edu" class="btn btn-primary">Get in Touch</a>
+      <a href="/cdn-cgi/l/email-protection#e18d84978892828988a19295808f878e9385cf848594" class="btn btn-primary">Get in Touch</a>
       <a href="#mission" class="btn btn-secondary">Learn More</a>
     </div>
   </div>
@@ -905,12 +910,12 @@
   </div>
   <div class="footer-info">
     Stanford, California<br>
-    <a href="mailto:lschiffer@stanford.edu">lschiffer@stanford.edu</a><br>
+    <a href="/cdn-cgi/l/email-protection#254940534c56464d4c655651444b434a57410b404150"><span class="__cf_email__" data-cfemail="b9d5dccfd0cadad1d0f9cacdd8d7dfd6cbdd97dcddcc">[email&#160;protected]</span></a><br>
     &copy; 2026 The Generations Project
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll-triggered reveals
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -920,23 +925,4 @@
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // Nav scroll effect
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 80);
-  });
-
-  // Smooth anchor scrolling
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-</script>
-
-</body>
-</html>
+  document.quer
