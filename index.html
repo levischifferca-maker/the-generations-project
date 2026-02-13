@@ -896,7 +896,7 @@
       We are seeking families, student collaborators, media partners, and supporters who believe that stories can change the world. The pilot launches in 2026.
     </p>
     <div class="cta-buttons reveal reveal-delay-2">
-      <a href="/cdn-cgi/l/email-protection#e18d84978892828988a19295808f878e9385cf848594" class="btn btn-primary">Get in Touch</a>
+      <a href="mailto:levischi@stanford.edu" class="btn btn-primary">Get in Touch</a>
       <a href="#mission" class="btn btn-secondary">Learn More</a>
     </div>
   </div>
@@ -910,12 +910,12 @@
   </div>
   <div class="footer-info">
     Stanford, California<br>
-    <a href="/cdn-cgi/l/email-protection#254940534c56464d4c655651444b434a57410b404150"><span class="__cf_email__" data-cfemail="b9d5dccfd0cadad1d0f9cacdd8d7dfd6cbdd97dcddcc">[email&#160;protected]</span></a><br>
+    <a href="mailto:levischi@stanford.edu">levischi@stanford.edu</a><br>
     &copy; 2026 The Generations Project
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Scroll-triggered reveals
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -925,4 +925,23 @@
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-  document.quer
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+  });
+
+  // Smooth anchor scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
